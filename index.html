@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>IntegraCAR — Integração de dados ambientais</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#6EC5F0" />
+</head>
+
+<body class="site-bg">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top site-navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#hero">
+                <img src="Logo-IntegraCAR-ES.png" alt="Logo IntegraCAR" height="40" class="me-2 site-logo">
+                <span class="fw-bold site-title">IntegraCAR</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#dataset">Dataset</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#demo">Demo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#download">Download</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header id="hero" class="py-5 hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7" data-aos="fade-up">
+                    <h1 class="display-5 fw-bold hero-title">IntegraCAR</h1>
+                    <p class="lead hero-lead mb-4">
+                        Integrando dados geoespaciais para o futuro do Cadastro Ambiental Rural.
+                    </p>
+                    <p>
+                        <a class="btn btn-lg btn-cta me-2" href="#dataset">
+                            Conheça o Dataset
+                        </a>
+                        <a class="btn btn-outline-secondary ms-2" href="#demo">
+                            Ver Demonstração
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-lg-5" data-aos="fade-left">
+                    <div class="card shadow-sm card-variant">
+                        <div class="card-body p-4">
+                            <h5 class="card-title">Visão geral rápida</h5>
+                            <p class="card-text">
+                                O nosso dataset é um conjunto de dados voltado à análise ambiental e segmentação
+                                semântica de áreas rurais.
+                                Ele reúne imagens de satélite e mapas rotulados para identificar diferentes tipos de uso
+                                e cobertura do solo, como vegetação, áreas agrícolas, corpos d’água e zonas urbanas.
+                                Esses dados servem como base para pesquisas, monitoramento ambiental e treinamento de
+                                modelos de inteligência artificial aplicados ao geoprocessamento.
+                            </p>
+                            <ul class="list-unstyled mb-0 tech-list">
+                                <li><strong>Formatos:</strong> *************</li>
+                                <li><strong>Áreas cobertas:</strong> **********</li>
+                                <li><strong>Licença:</strong> ************</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-md-6" data-aos="fade-right">
+                    <h2>Sobre o projeto</h2>
+                    <p>
+                        O projeto IntegraCAR – Integração do Cadastro Ambiental Rural no Estado do Espírito Santo tem como objetivo realizar o levantamento de informações para subsidiar a regularização dos Cadastros Ambientais Rurais (CAR) pertencentes ou sob a responsabilidade privada ou pública. A iniciativa busca garantir a integração de dados, a gestão sustentável do patrimônio imobiliário rural e a 
+                        conformidade legal no território capixaba, alinhando-se aos Objetivos de Desenvolvimento Sustentável (ODS), ao Planejamento Estratégico 2023-2026 e às diretrizes do Programa INOVA SEGER.
+                    </p>
+                </div>
+
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <div class="info-card p-3 h-100 shadow-sm">
+                                <h5 class="mb-1">IntegraCAR em Números</h5>
+                                <p class="mb-0">· <strong>170 mil</strong> hectares de áreas degradadas em processo de recuperação ambiental</p>
+                                <p class="mb-0">· <strong>R$ 12,6 milhões</strong> investidos</p>
+                                <p class="mb-0">· <strong>270</strong> alunos </p>
+                                <p class="mb-0">· <strong>34</strong> servidores do Ifes</p>
+                                <p class="mb-0">· <strong>23</strong> servidores do Idaf</p>    
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="info-card p-3 h-100 shadow-sm">
+                                <h5 class="mb-1">Campi</h5>
+                                <p class="mb-0">O IntegraCAR conta com a participação de 13 campi do Ifes: Alegre, Barra de São Francisco, Cachoeiro de Itapemirim, Colatina, Ibatiba, Itapina, Linhares, Montanha, 
+                                    Nova Venécia, Piúma, Santa Teresa, Serra e Vitória.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Parceiros</h2>
+                
+                <div id="demoCarousel" class="carousel slide carousel-small" data-bs-ride="carousel" data-aos="zoom-in">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demoCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#demoCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#demoCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#demoCarousel" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+
+                    <div class="carousel-inner rounded-3 shadow">
+                        <div class="carousel-item active">
+                            <img src="imagensSobre/ifes.png" class="d-block w-100" alt="Ifes">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="imagensSobre/idaf.png" class="d-block w-100" alt="Idaf">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="imagensSobre/fapes.jpg" class="d-block w-100" alt="Fapes">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="imagensSobre/seger.png" class="d-block w-100" alt="Seger">
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demoCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demoCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
+                </div>
+                
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="info-card p-4 h-100 shadow-sm rounded-3">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="flex-grow-1">
+                                <strong>Instituto Federal do Espírito Santo (Ifes)</strong><br>
+                                <small class="text-muted">Expertise acadêmica, 270 estudantes e 34 servidores</small>
+                            </div>
+                            <div class="ms-3 text-end">
+                                <a href="https://www.instagram.com/ifesoficial/" target="_blank" class="text-decoration-none me-2" title="Instagram Ifes">
+                                    <i class="bi bi-instagram fs-4 text-dark"></i>
+                                </a>
+                                <a href="https://ifes.edu.br" target="_blank" class="text-decoration-none" title="Site Ifes">
+                                    <i class="bi bi-globe fs-4 text-dark"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <hr class="my-3">
+
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="flex-grow-1">
+                                <strong>Instituto de Defesa Agropecuária e Florestal (Idaf)</strong><br>
+                                <small class="text-muted">Responsável pelo CAR no ES e coordenação do projeto</small>
+                            </div>
+                            <div class="ms-3 text-end">
+                                <a href="https://www.instagram.com/idaf_es/" target="_blank" class="text-decoration-none me-2" title="Instagram Idaf">
+                                    <i class="bi bi-instagram fs-4 text-dark"></i>
+                                </a>
+                                <a href="https://idaf.es.gov.br" target="_blank" class="text-decoration-none" title="Site Idaf">
+                                    <i class="bi bi-globe fs-4 text-dark"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <hr class="my-3">
+
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="flex-grow-1">
+                                <strong>Fundação de Amparo à Pesquisa e Inovação (Fapes)</strong><br>
+                                <small class="text-muted">Financiamento via Edital Inova Seger 2025</small>
+                            </div>
+                            <div class="ms-3 text-end">
+                                <a href="https://www.instagram.com/fapes.es/" target="_blank" class="text-decoration-none me-2" title="Instagram Fapes">
+                                    <i class="bi bi-instagram fs-4 text-dark"></i>
+                                </a>
+                                <a href="https://fapes.es.gov.br" target="_blank" class="text-decoration-none" title="Site Fapes">
+                                    <i class="bi bi-globe fs-4 text-dark"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <hr class="my-3">
+
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="flex-grow-1">
+                                <strong>Secretaria de Gestão e Recursos Humanos (Seger)</strong><br>
+                                <small class="text-muted">Inovação na gestão pública estadual</small>
+                            </div>
+                            <div class="ms-3 text-end">
+                                <a href="https://seger.es.gov.br" target="_blank" class="text-decoration-none" title="Site Seger">
+                                    <i class="bi bi-globe fs-4 text-dark"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <hr class="my-3">
+                        <div class="ms-3 text-end">
+                        <a href="https://www.instagram.com/integracar.ifes/" target="_blank" class="text-decoration-none me-2" title="Instagram IntegraCAR">
+                            <i class="bi bi-instagram fs-6 text-dark"> @integracar.ifes</i>
+                        </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- DATASET -->
+    <section id="dataset" class="py-5 dataset-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <h2>Sobre o Dataset</h2>
+                    <p>
+                        O pacote de dados contém camadas vetoriais e tabelas relacionadas ao CAR:
+                    </p>
+                    <ul>
+                        <li><strong>Conteúdo:</strong> polígonos de imóveis, APPs, áreas de preservação, uso do solo.
+                        </li>
+                        <li><strong>Formatos:</strong> GeoJSON, Shapefile (.shp .dbf .shx .prj), CSV com atributos
+                            tabulares.</li>
+                        <li><strong>Coleta:</strong> integração de bases públicas e extração de declarações de CAR, com
+                            tratamento e padronização.</li>
+                        <li><strong>Tamanho aproximado:</strong> depende das camadas — exemplos: GeoJSON (50–200 MB),
+                            Shapefile (compactado).</li>
+                    </ul>
+
+                    <p class="mt-3"><small><strong>Observação:</strong> os dados foram anonimizados e possuem metadados
+                            com a
+                            procedência e data de extração.</small></p>
+                </div>
+
+                <div class="col-lg-6" data-aos="zoom-in">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title">Detalhes técnicos</h5>
+                            <table class="table table-borderless mb-0">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">SRS</th>
+                                        <td>EPSG:4674 / EPSG:4326 (WGS84)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Atributos</th>
+                                        <td>identificador, área_ha, uso_atual, data_declaração</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Licença</th>
+                                        <td>Open Data / CC BY (ver termos)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="mt-3">
+                                <a class="btn btn-lg btn-cta me-2" href="#download">Ir para Download</a>
+                                <a class="btn btn-outline-secondary ms-2" href="#contato">Solicitar acesso via
+                                    e-mail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEMO -->
+    <section id="demo" class="py-5 demo-section">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 data-aos="fade-right">Demonstração</h2>
+                <p class="mb-0 text-muted" data-aos="fade-left">Exemplos de mapas.</p>
+            </div>
+
+            <div id="demoCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="zoom-in">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demoCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#demoCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#demoCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner rounded-3 shadow">
+                    <div class="carousel-item active">
+                        <img src="" class="d-block w-100" alt="Mapa exemplo">
+                        <div class="carousel-caption d-none d-md-block caption-bg">
+                            <h5>EXEMPLO 1</h5>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="" class="d-block w-100" alt="Mapa exemplo">
+                        <div class="carousel-caption d-none d-md-block caption-bg">
+                            <h5>EXEMPLO 2</h5>
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="" class="d-block w-100" alt="Mapa exemplo">
+                        <div class="carousel-caption d-none d-md-block caption-bg">
+                            <h5>EXEMPLO 3</h5>
+
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#demoCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demoCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- DOWNLOAD -->
+    <section id="download" class="py-5 download-section">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-8" data-aos="fade-right">
+                    <h2>Download do Dataset</h2>
+                    <p>
+                        Clique no botão abaixo para baixar o pacote de dados do IntegraCAR. O download contém:
+                    </p>
+                    <ul>
+                        <li>GeoJSON por região</li>
+                        <li>Shapefile compactado (.zip)</li>
+                        <li>CSV com atributos e metadados</li>
+                        <li>Arquivo README com instruções e termos de uso</li>
+                    </ul>
+
+                    <p><small><strong>Termos:</strong> Ao baixar, você concorda em citar o IntegraCAR
+                            em trabalhos que utilizarem os dados e seguir as restrições de privacidade descritas no
+                            README.</small></p>
+                </div>
+
+                <div class="col-md-4 text-md-end" data-aos="fade-left">
+                    <a id="downloadBtn" class="btn btn-download shadow-lg" href="/downloads/integracar-dataset.zip"
+                        role="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                            class="bi bi-download me-2" viewBox="0 0 16 16" aria-hidden="true">
+                            <path
+                                d="M.5 9.9a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H1v3.5A1.5 1.5 0 0 0 2.5 15h11A1.5 1.5 0 0 0 15 13.9V10.4h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 1 .5.5v3.5A2.5 2.5 0 0 1 13.5 16h-11A2.5 2.5 0 0 1 0 13.9V10.4z" />
+                            <path
+                                d="M7.646 11.854a.5.5 0 0 0 .708 0L11 9.207V1.5a.5.5 0 0 0-1 0v7.293L8.354 10.5a.5.5 0 0 0 .708.707L8 11.268l-.354.354z" />
+                        </svg>
+                        Baixar Dataset
+                    </a>
+                    <div class="mt-3 small text-muted">Tamanho do pacote: ~100 MB (exemplo)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="py-5 contato-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <h2>Contato</h2>
+                    <p>Você pode entrar em contato com os participantes do projeto abaixo:</p>
+
+                    <ul class="list-unstyled contact-list">
+                        <li class="mb-2"><strong>Pessoa 1:</strong> nome — contato@gmail</li>
+                        <li class="mb-2"><strong>Pessoa 2:</strong> nome — contato@gmail</li>
+                        <li class="mb-2"><strong>Pessoa 3:</strong> nome — contato@gmail</li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-4 site-footer">
+        <div class="container text-center">
+            <small>IntegraCAR © <span id="year"></span> — Todos os direitos reservados.</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({ once: true, duration: 700 });
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
