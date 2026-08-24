@@ -420,19 +420,55 @@
 
                     <!-- Citation / Terms box -->
                     <div class="ben-citation-box text-start">
-                        <p class="ben-citation-label mb-2">
-                            <i class="bi bi-journal-text me-2"></i><strong>Citação e Termos de Uso</strong>
-                        </p>
-                        <p class="mb-2 small">Ao utilizar este dataset, você concorda em citar o
-                            <strong>IntegraCAR</strong> em
-                            publicações e seguir as restrições de privacidade descritas no README.
-                        </p>
-                        <pre class="ben-citation-pre mb-0">@dataset{integracar2025,
+                        <div class="row g-4">
+                            <!-- Left Column: Paper Info -->
+                            <div class="col-lg-6 d-flex flex-column">
+                                <p class="ben-citation-label mb-3">
+                                    <i class="bi bi-file-earmark-text me-2"></i><strong>Artigo Científico Oficial</strong>
+                                </p>
+                                <h6 class="fw-bold text-dark mb-2" style="color: #0a1b2b;">IntegraCAR-LULC-10K: A High-Resolution Optical Satellite Dataset for LULC Segmentation in the Brazilian Rural Environmental Registry</h6>
+                                <p class="small text-muted mb-1"><strong>Autores:</strong> Calebe Albertino, Gabriel M. B. Lima, Vinicius R. Oliveira, Arthur R. V. Ribeiro, Eliza K. S. Oliveira, Eduardo H. P. Souza, Otavio G. Dalvi, Karin S. Komati, Jefferson O. Andrade, Francisco A. Boldt, Thiago M. Paixao</p>
+                                <p class="small text-muted mb-3"><strong>Afiliação:</strong> Instituto Federal do Espírito Santo (IFES) & Instituto de Defesa Agropecuária e Florestal do Espírito Santo (IDAF)</p>
+                                
+                                <div class="accordion accordion-flush mb-4 border rounded" id="abstractAccordionPt">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingAbstractPt">
+                                            <button class="accordion-button collapsed py-2 px-3 small fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAbstractPt" aria-expanded="false" aria-controls="collapseAbstractPt">
+                                                Ver Resumo (Abstract)
+                                            </button>
+                                        </h2>
+                                        <div id="collapseAbstractPt" class="accordion-collapse collapse" aria-labelledby="headingAbstractPt" data-bs-parent="#abstractAccordionPt">
+                                            <div class="accordion-body small text-muted text-justify p-3">
+                                                O mapeamento de uso e cobertura da terra (LULC) no contexto do Cadastro Ambiental Rural (CAR) brasileiro é essencial para a governança ambiental, no entanto, faltam benchmarks de aprendizado de máquina disponíveis publicamente adaptados a este domínio. Este artigo apresenta o IntegraCAR-LULC-10K, um conjunto de dados de sensoriamento remoto de alta resolução para segmentação semântica de áreas relacionadas ao CAR no Espírito Santo, Brasil, construído a partir de imagens ortofotomosaico KOMPSAT-3/3A e anotações temáticas do GeoBases (2019–2020)...
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-auto">
+                                    <a href="paper.pdf" target="_blank" class="btn ben-btn-primary w-100 fw-bold">
+                                        <i class="bi bi-file-earmark-pdf-fill me-2"></i>Baixar Artigo (PDF)
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Right Column: Citation & Limitations -->
+                            <div class="col-lg-6 d-flex flex-column">
+                                <p class="ben-citation-label mb-3">
+                                    <i class="bi bi-journal-text me-2"></i><strong>Citação e Termos de Uso</strong>
+                                </p>
+                                <p class="mb-2 small text-muted">Ao utilizar este dataset, você concorda em citar o
+                                    <strong>IntegraCAR</strong> em
+                                    publicações e seguir as restrições de privacidade descritas no README.
+                                </p>
+                                <pre class="ben-citation-pre mb-0 mt-auto">@dataset{integracar2025,
   title   = {IntegraCAR-LC10K: Land Cover Dataset for the State of Espírito Santo},
   author  = {Ifes and Idaf},
   year    = {2025},
   note    = {Financiado pela Fapes / Edital Inova Seger 2025}
 }</pre>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
